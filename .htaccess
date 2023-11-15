@@ -1,5 +1,5 @@
-# so we don't give the user the opportunity to reach (app) page although it's forbidden because it's unsafe.
-# it makes writing(public) unnecessary in the URL.
+# So we don't give the user the opportunity to reach (app) page although it's forbidden because it's unsafe.
+# It makes writing(public) unnecessary in the URL.
 
 <IfModule mod_rewrite.c>
   RewriteEngine on
