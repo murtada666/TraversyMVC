@@ -1,0 +1,12 @@
+# it redirect the page to index.php if the page requested is NOT exist
+
+# remember to change site name!!!!.  
+
+<IfModule mod_rewrite.c>
+  Options -Multiviews
+  RewriteEngine On
+  RewriteBase /traversymvc/public
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule> 
